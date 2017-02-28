@@ -40,6 +40,12 @@ public class AlarmService extends Service{
         super.onDestroy();
     }
 
+    @Override
+    public boolean onUnbind(Intent intent) {
+        mMediaPlayer = null;
+        return super.onUnbind(intent);
+    }
+
     /**
      * 播放器代理
      */
@@ -63,6 +69,7 @@ public class AlarmService extends Service{
         public void play(Uri uri) {
             Logger.d(TAG,"start play");
             try {
+                mMediaPlayer.stop();
                 //mMediaPlayer.setDataSource(mContext,uri);
                 mMediaPlayer.prepare();
                 // 循环播放
@@ -85,6 +92,7 @@ public class AlarmService extends Service{
             Logger.d(TAG,"stop");
             mVibrator.cancel();
             mMediaPlayer.stop();
+            mMediaPlayer.reset();
             mMediaPlayer.release();
         }
     }

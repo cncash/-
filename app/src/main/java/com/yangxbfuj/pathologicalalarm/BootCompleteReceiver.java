@@ -25,7 +25,7 @@ public class BootCompleteReceiver extends BroadcastReceiver {
 //            context.startActivity(intent1);
             AlarmManager manager = (AlarmManager) context.getApplicationContext().getSystemService(Context.ALARM_SERVICE);
             long triggerTime = SystemClock.elapsedRealtime();
-            Intent intent2 = new Intent("com.yangxbfuj.pathologicalalarm.main");
+            Intent intent2 = new Intent(context,MainActivity.class);
             PendingIntent pendingIntent = PendingIntent.getActivity(context,0,intent2,0);
             Log.d(TAG,"set a alarm task start after 5 minutes");
             manager.setRepeating(AlarmManager.ELAPSED_REALTIME_WAKEUP,triggerTime,30 * 1000,pendingIntent);
