@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
 
     KeyboardLayout mKeyboardLayout;
 
-    IAlarm mPlayer;
+    IAlarmPlayer mPlayer;
 
     ServiceConnection mServiceConnection;
 

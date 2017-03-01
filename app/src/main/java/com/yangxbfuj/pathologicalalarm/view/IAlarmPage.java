@@ -5,4 +5,5 @@ package com.yangxbfuj.pathologicalalarm.view;
  */
 
 public interface IAlarmPage {
+    public void onDataChanged();
 }

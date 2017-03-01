@@ -6,7 +6,7 @@ import android.net.Uri;
  * Created by yangxb on 2017/2/28.
  */
 
-public interface IAlarm {
+public interface IAlarmPlayer {
 
     /**
      * 播放闹铃

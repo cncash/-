@@ -8,20 +8,24 @@ import android.net.Uri;
 
 public class AlarmBean {
 
+    public static final int TRUE = 1;
+
+    public static final int FAlSE = 0;
+
     // 主键 id
     private int mId;
 
     // 启用标志
-    private boolean mEnable;
+    private int mEnable;
 
     // 闹铃时间
     private long mAlarmTime;
 
     // 闹铃是否重复
-    private boolean mRepeat;
+    private int mRepeat;
 
     // 闹铃在一周之内哪几天工作
-    private boolean[] mWeekInfo;
+    private int[] mWeekInfo;
 
     // 闹铃资源地址
     private Uri mResource;
@@ -34,11 +38,11 @@ public class AlarmBean {
         this.mId = id;
     }
 
-    public boolean isEnable() {
+    public int isEnable() {
         return mEnable;
     }
 
-    public void setEnable(boolean enable) {
+    public void setEnable(int enable) {
         this.mEnable = enable;
     }
 
@@ -50,19 +54,19 @@ public class AlarmBean {
         this.mAlarmTime = alarmTime;
     }
 
-    public boolean isRepeat() {
+    public int isRepeat() {
         return mRepeat;
     }
 
-    public void setRepeat(boolean repeat) {
+    public void setRepeat(int repeat) {
         this.mRepeat = repeat;
     }
 
-    public boolean[] getWeekInfo() {
+    public int[] getWeekInfo() {
         return mWeekInfo;
     }
 
-    public void setWeekInfo(boolean[] weekInfo) {
+    public void setWeekInfo(int[] weekInfo) {
         this.mWeekInfo = weekInfo;
     }
 

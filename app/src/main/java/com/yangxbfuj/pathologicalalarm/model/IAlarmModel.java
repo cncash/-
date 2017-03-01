@@ -12,17 +12,8 @@ import java.util.List;
 
 public interface IAlarmModel {
 
-    void setEnable(boolean enable);
-
-    void setAlarmTime(long alarmTime);
-
-    void setRepeat(boolean repeat);
-
-    void setWeekInfo(boolean[] weekInfo);
-
-    void setResouce(Uri resource);
-
-    void saveAnAlarm();
+    void saveAnAlarm(AlarmBean alarm);
 
     List<AlarmBean> getAllAlarms();
+
 }

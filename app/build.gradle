@@ -29,4 +29,8 @@ dependencies {
     compile 'com.coolerfall:android-app-daemon:1.2.0'
     compile 'com.android.support:recyclerview-v7:25.1.1'
     compile 'com.android.support:design:25.1.1'
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.2'
+    testCompile 'com.google.dexmaker:dexmaker:1.2'
+    testCompile 'com.google.dexmaker:dexmaker-mockito:1.2'
+    testCompile 'org.mockito:mockito-core:1.9.5'
 }

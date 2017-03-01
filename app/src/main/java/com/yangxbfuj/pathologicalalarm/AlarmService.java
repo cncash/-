@@ -49,7 +49,7 @@ public class AlarmService extends Service{
     /**
      * 播放器代理
      */
-    public static class Player extends Binder implements IAlarm{
+    public static class Player extends Binder implements IAlarmPlayer {
 
         final String TAG = getClass().getSimpleName();
         // 震动参数

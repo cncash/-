@@ -45,6 +45,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <provider
+            android:name=".AlarmContentProvider"
+            android:authorities="com.yangxbfuj.alarms"
+            android:enabled="true"
+            android:exported="true"></provider>
     </application>
 
 </manifest>

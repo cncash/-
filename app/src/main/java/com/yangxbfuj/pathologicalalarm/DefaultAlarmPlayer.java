@@ -13,7 +13,7 @@ import java.io.IOException;
  * Created by yangxb on 2017/2/28.
  */
 
-public class DefaultAlarmPlayer implements IAlarm {
+public class DefaultAlarmPlayer implements IAlarmPlayer {
 
     final String TAG = getClass().getSimpleName();
     // 震动参数
